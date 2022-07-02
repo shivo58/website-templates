@@ -1,0 +1,42 @@
+:root {
+  --hover: #df1327;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bs-danger) var(--bs-gray-200);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bs-gray-200);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--bs-danger);
+}
+ 
+a {
+  text-decoration: none;
+}
+
+a:has(.bg-dark):hover {
+  color: var(--hover) !important;
+}
+
+a:not(.bg-dark):hover {
+  color: var(--hover) !important;
+}
+
+.nav-link {
+  color: var(--bs-danger) !important;
+}
+
+.ig-avatar {
+  width:56px;
+  height:56px;
+}
+
+.ig-border-rounded {
+  border-radius:50px;
+}
