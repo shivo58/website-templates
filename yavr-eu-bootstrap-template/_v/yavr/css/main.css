@@ -1,0 +1,85 @@
+:root {
+    --yavr-muted: rgb(245 245 245);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.61111em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--bs-red);
+}
+
+.bg-none {
+    background: none;
+}
+
+.navbar-nav .nav-item {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar-nav .nav-item .active {
+    border-bottom: 2px solid var(--bs-red);
+}
+
+.yavr-icon-bg {
+    box-sizing: border-box;
+    background: var(--bs-red);
+    color: var(--bs-light);
+    padding: 7px;
+    width: 36px;
+    height: 36px;
+    border-radius: 500px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yavr-icon-bg-medium {
+    font-size: 22px;
+    width: 48px;
+    height: 48px;
+}
+
+.yavr-carousel .carousel-item {
+    height: 300px;
+}
+  
+.yavr-carousel .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.yavr-carousel .carousel-caption {
+    bottom: 5rem;
+}
+
+.yavr-bg-muted {
+    background: var(--yavr-muted);
+}
+
+.yavr-bg-crs {
+    background: url(/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.yavr-obj-cover {
+    object-fit: cover;
+}
