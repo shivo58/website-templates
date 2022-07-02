@@ -1,0 +1,102 @@
+html {
+    background: #23272a;
+}
+
+* {
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+  background-color: #F5F5F5;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar-thumb
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #ca2b2b;
+  overflow-x: auto;
+}
+
+.ig-menu {
+    background: #1a1c1f;
+    z-index: 200;
+}
+
+.ig-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
+    width: inherit;
+    padding-top: 100px;
+}
+
+.uk-navbar {
+    padding: 0px 75px;
+}
+
+.uk-navbar-nav>li>a, .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+    min-height: 50px;
+    text-transform: none;
+}
+
+.ig-border-bottom {
+    border-bottom: 1px solid #1b1e22!important;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: rgb(44, 47, 51) !important;
+}
+
+.uk-sticky-fixed {
+    margin: inherit !important;
+}
+
+.uk-light .uk-nav-default>li>a:hover {
+    background-color: rgb(22, 24, 26);
+}
+
+.ig-background-dark {
+    background-color: #1a1c1f;
+}
+
+.ig-post {
+    position: relative;
+    width: inherit;
+    height: 350px;
+}
+
+.ig-post::before, .ig-post::after{
+  content: "";
+  background-image: var(--img);
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ig-post::before{
+  content: "";
+  background-repeat: repeat;
+  filter: blur(3px);
+  }
+
+.ig-post::after{
+  content: "";
+  background-repeat: no-repeat;
+  z-index: 1;
+}
